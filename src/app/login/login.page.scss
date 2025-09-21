@@ -1,0 +1,9 @@
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh; /* penuh 1 layar */
+  width: 100%;   /* penuh horizontal */
+  flex-direction: column;
+  background-color: rgb(224, 205, 233);
+}

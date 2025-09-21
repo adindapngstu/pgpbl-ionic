@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true">
+  <div class="card-section">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Register</ion-card-title>
+        <ion-card-subtitle>Use your credentials to register</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <!-- Email -->
+        <ion-item>
+          <ion-input 
+            type="text" 
+            label="Email" 
+            [(ngModel)]="email" 
+            labelPlacement="floating"
+            placeholder="Enter your email">
+          </ion-input>
+        </ion-item>
+
+        <!-- Password -->
+        <ion-item>
+          <ion-input 
+            type="password" 
+            label="Password" 
+            [(ngModel)]="password" 
+            labelPlacement="floating"
+            placeholder="Enter password">
+            <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+          </ion-input>
+        </ion-item>
+
+        <!-- Confirm Password -->
+        <ion-item>
+          <ion-input 
+            type="password" 
+            label="Confirm Password" 
+            [(ngModel)]="confirmPassword" 
+            labelPlacement="floating"
+            placeholder="Confirm your password">
+            <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+          </ion-input>
+        </ion-item>
+
+        <!-- Register Button -->
+        <ion-button expand="block" color="primary" (click)="register()">Register</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
